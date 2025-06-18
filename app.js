@@ -1,3 +1,4 @@
 function darkModeToggle() {
-    document.body.classList.toggle('dark-mode');
+    document.body.idList.toggle('dark-mode');
+    document.getElementByClass('main-button').idList.toggle('dark-mode');
 }
