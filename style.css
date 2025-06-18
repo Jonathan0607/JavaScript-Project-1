@@ -1,0 +1,44 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  height: 95vh;
+}
+
+.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+.button-container {
+  position: relative;
+  top: 35%;
+  left: 45%;
+  right: 45%;
+  height: 200px;
+  width: 200px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.button-container:hover {
+  background-color: white;
+}
+.button-container:hover #main-button {
+  color: black;
+  background-color: white;
+}
+
+
+#main-button {
+  color: white;
+  background-color: black;
+  padding: 0;
+  border: 0;
+  font-size: 40px;
+}
+
+
