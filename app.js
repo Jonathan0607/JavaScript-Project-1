@@ -1,4 +1,11 @@
 function darkModeToggle() {
-    document.body.idList.toggle('dark-mode');
-    document.getElementByClass('main-button').idList.toggle('dark-mode');
+    if (document.body.hasAttribute('id')) {
+        document.body.removeAttribute('id');
+        document.querySelector('.main-button').removeAttribute('id');
+    } else {
+        document.body.setAttribute('id', 'dark-mode');
+        document.querySelector('.main-button').setAttribute('id', 'dark-mode');
+    }
 }
+
+document.getElementsByTagName('button')[0].addEventListener('click', darkModeToggle);
