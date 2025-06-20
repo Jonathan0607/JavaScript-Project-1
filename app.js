@@ -12,3 +12,4 @@ function darkModeToggle() {
 }
 
 document.getElementsByTagName('button')[0].addEventListener('click', darkModeToggle);
+document.getElementById('click').volume = 1;
